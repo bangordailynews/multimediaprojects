@@ -23,7 +23,7 @@ function sendGoogleAnalyticsEvent( eventAction, eventLabel, eventValue ) {
 
     ga('send', {
         'hitType': 'event', // Required.
-        'eventCategory': 'In_memory', // Required.
+        'eventCategory': 'in_memory', // Required.
         'eventAction': eventAction, // Required.
         'eventLabel': eventLabel,
         'eventValue': eventValue
