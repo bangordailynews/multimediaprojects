@@ -1,0 +1,10 @@
+.fb-comments {
+  margin: 0 auto; }
+
+.comment-call-to-action {
+  background-color: #E1E7F1;
+  padding: 5%;
+  cursor: pointer; }
+  .comment-call-to-action p {
+    line-height: 150%;
+    font-family: "Open Sans", sans-serif; }
