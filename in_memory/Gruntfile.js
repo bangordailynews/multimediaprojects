@@ -413,7 +413,7 @@ module.exports = function (grunt) {
                 authKey: 'key1'
             },
             src: '<%= config.dist %>',
-            dest: 'mm.bdn.com/In_memory',
+            dest: 'mm.bdn.com/in_memory',
             exclusions: [],
             keep: [],
             // exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', 'dist/tmp'],
