@@ -1,13 +1,13 @@
 $light-background: #E1E7F1;
 $dark-background: #C1BEB9;
 $blue: #0E0E0E;
-$beige: #d07728;
+$beige: #445136;
 $dark: #0C0B0C;
 
 //$display-font-stack: 'BebasNeueRegular', sans-serif;
 $font-stack: 'ChaparralPro-Light', georgia, serif;
 $sans-font-stack: 'Open Sans', sans-serif;
-$display-font-stack: 'Coda', cursive;
+$display-font-stack: Miller,Georgia,Times,serif;
 
 
 
@@ -304,20 +304,16 @@ p, ul, li {
 }
 
 #intro h1.title {
-    font-size: 500%;
+    font-size: 400%;
+    font-weight: 700;
     padding: 0;
     margin: 0;
     line-height: 100%;
-    border: thin #a0a0a0;
-    //color: rgba(250, 200, 0, 0.9);
-    //text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.8);
+    color: $beige;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.8);
     text-align: left;
     text-transform: uppercase;
     width: 100%;
-    display: table;
-    background-image: url(../images/woodbkrd.jpg);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 #intro .inner {
@@ -612,7 +608,7 @@ a.addthis_button_twitter {
         width: 50%;
     }
     #intro h1.title {
-        font-size: 600%;
+        font-size: 500%;
     }
 }
 
@@ -710,7 +706,7 @@ a.addthis_button_twitter {
 
 @media (min-width: 1200px) {
     #intro h1.title {
-        font-size: 750%;
+        font-size: 500%;
     }
     #intro .subtitle {
         font-size: 200%;
