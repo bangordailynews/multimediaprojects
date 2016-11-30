@@ -160,19 +160,19 @@ function setUpChapters( chapter, displayChapter ) {
 
 function setUpAds( machineName ) {
     // Add the ad tags
-    $('<div class="rich-media size-medium ad orientation-right"><div id="bdnads-top-300x600"></div></div>').insertAfter($('#card-'+ machineName +'-3 p.text:nth-last-of-type(6)').first());
+    $('<div class="rich-media size-medium ad orientation-right"><div id="bdnads-top-300x600"></div></div>').insertAfter($('#card-3 p.text:nth-last-of-type(6)').first());
     googletag.cmd.push(function() {
         googletag.display('bdnads-top-300x600');
     });
 
-    for( var i = 1; i < 5; i++ ) {
-        $('<div class="rich-media size-medium ad orientation-left"><div id="bdnads-bottom-300x250-'+i+'"></div></div>').insertAfter($('#card-'+ machineName +'-'+ eval(3 + i) +' p.text:nth-last-of-type(4)').first());
+    for( var i = 1; i < 3; i++ ) {
+        $('<div class="rich-media size-medium ad orientation-left"><div id="bdnads-bottom-300x250-'+i+'"></div></div>').insertAfter($('#card-'+ eval(3 + i) +' p.text:nth-last-of-type(4)').first());
         googletag.cmd.push( function() {
           googletag.display('bdnads-bottom-300x250-'+ i);
         });
     }
 
-    $('.ad').prepend('<h6><span>Story continues after </span>Paid Advertisement</h6>');
+    //$('.ad').prepend('<h6><span>Story continues after </span>Paid Advertisement</h6>');
     $('.comment-call-to-action').click(function() {
             $( this ).toggle();
             $('.fb-comments').toggle()

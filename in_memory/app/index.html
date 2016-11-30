@@ -2,14 +2,17 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>At the forest</title>
+    <title>Down the road</title>
+      <meta name="description" content="How the decline of Maine’s rural places changes the people left behind.">
 
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="In memory">
-    <meta name="description" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+      <!-- FB Insights -->
+    <meta property="fb:app_id" content="818159764987374">
+    <meta property="og:title" content="Down the road">
+    <meta name="og:description" content="Three people grapple with the decline of the communities that made them.">
+    <meta property="og:url" content="http://mainefocus.bangordailynews.com/2016/11/down-the-road">
+    <meta property="og:image" content="http://mainefocus.bangordailynews.com/2016/11/down-the-road/images/share_img.jpg">
 
     <meta property="og:site_name" content="Bangor Daily News">
     <meta property="og:type" content="website">
@@ -17,6 +20,18 @@
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="bdnmaine.png">
+
+      <!--twitter meta tags  -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@bangordailynews">
+      <meta name="twitter:creator" content="@ErinRhoda">
+      <meta name="twitter:title" content="Down the road">
+      <meta name="twitter:description" content="'Time only runs in one direction,' said Steve Sherman.">
+      <meta name="twitter:image" content="http://mainefocus.bangordailynews.com/2016/11/down-the-road/images/share_img.jpg">
+
+
+
+      <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 
@@ -32,6 +47,41 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+
+     <script type="application/ld+json">
+       {
+         "@context": "http://schema.org",
+         "@type": "NewsArticle",
+         "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http://mainefocus.bangordailynews.com/2016/11/down-the-road"
+         },
+         "headline": "Down the road",
+         "image": {
+            "@type": "ImageObject",
+            "url": "http://mainefocus.bangordailynews.com/2016/11/down-the-road/images/share_img.jpg",
+            "height": 533,
+            "width": 800
+         },
+         "datePublished": "2016-11-29T06:00:00+08:00",
+         "dateModified": "2016-11-29T06:00:00+08:00",
+         "author": {
+            "@type": "Person",
+            "name": "Erin Rhoda"
+         },
+         "publisher": {
+            "@type": "Organization",
+            "name": "Bangor Daily News",
+            "logo": {
+                "@type": "ImageObject",
+                 "url": "http://mainefocus.bangordailynews.com/2016/11/down-the-road/images/bdnmaine.png",
+                 "width": 60,
+                 "height": 60
+            }
+         },
+         "description": "How the decline of Maine’s rural places changes the people left behind."
+       }
+     </script>
 
 
        <script type="text/javascript">
@@ -104,18 +154,37 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '818159764987374',
+                xfbml      : true,
+                version    : 'v2.8'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <div id="page">
 
       <div id="intro">
           <script id="head-template" type="text/x-handlerbars-template">
               <div class="inner" id="header-slide">
-                  <h1 class="title">At the forest</h1>
-                  <div class="subtitle">How the death of Maine’s rural places changes the people left behind</div>
+                  <h1 class="title">Down the road</h1>
+                  <div class="subtitle">How the decline of Maine’s rural places changes the people left behind</div>
                   <div class="byline">Erin Rhoda, Maine Focus Editor</div>
               </div><!-- /.inner -->
           </script>
           <div class="logo">
-              <a href="#">
+              <a href="http://bangordailynews.com">
                   <img src="images/MaineFocuslogo.jpg" alt="A BDN Maine Project" width="60">
               </a>
           </div>
@@ -158,7 +227,7 @@
                 <div class="col-xs-12">
                     <a name="comments"></a>
                     <div class="fb-comments"
-                         data-href="http://external.bangordailynews.com/projects/2016/02/garrett"
+                         data-href="http://mainefocus.bangordailynews.com/2016/11/down-the-road"
                          data-numposts="10"
                          data-width="100%"
                          data-colorscheme="light"
@@ -186,11 +255,11 @@
             data_track_addressbar:true,
             pubid:'ra-51c20b68617564b1'
         };
-        var addthis_share = {
-            templates: {
-                twitter: '',
-            }
-        };
+         var addthis_share = {
+          templates: {
+             twitter: ''
+           }
+         };
       addthis.layers({
         'theme' : 'transparent',
         'share' : {
@@ -233,8 +302,6 @@
 
     <!-- ############### -->
 
-      <!-- FB Insights -->
-     <meta property="fb:admins" content="5800548">
 
     <!-- ChartBeat -->
      <script type="text/javascript">
@@ -267,10 +334,10 @@
          });
          ga('require', 'displayfeatures');
          ga('send','pageview', {
-             'dimension1' : '', //Author
-             'dimenision3' : '', //Post ID
-             'dimension4' : '', //keywords
-             'dimension6' : 'In_memory' //projects
+             'dimension1' : 'Erin Rhoda', //Author
+             'dimenision3' : '1.2333876', //Post ID
+             'dimension4' : 'down the road, rural, Maine, county, Maine Focus, ', //keywords
+             'dimension6' : 'Down the road' //projects
          });
      </script>
 

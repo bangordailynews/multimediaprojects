@@ -392,12 +392,12 @@ module.exports = function (grunt) {
     image_resize: {
       resize: {
         options: {
-          width: 800,
-          height: '',
+           width: 800,
+           height: "",
           overwrite: true
         },
-        src: '<%= config.dist %>/images/{,*/}*.{jpeg,jpg}',
-        dest: '<%= config.dist %>/images/'  
+        src: "<%= config.dist %>/images/{,*/}*.{jpeg,jpg}",
+        dest: "<%= config.dist %>/images/"
       }
     },
 
@@ -405,23 +405,23 @@ module.exports = function (grunt) {
     // To use this, you'll need to configure the authorization keys 
     // in .ftppass in the project's root directory.
 
-    ftpush: {
-        build: {
-            auth: {
-                host: 'mm.bdn.com',
-                port: 80,
-                authKey: 'key1'
-            },
-            src: '<%= config.dist %>',
-            dest: 'mm.bdn.com/in_memory',
-            exclusions: [],
-            keep: [],
-            // exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', 'dist/tmp'],
-            // keep: ['/important/images/at/server/*.jpg'],
-            simple: false,
-            useList: false
-        }
-    }
+    // ftpush: {
+    //     build: {
+    //         auth: {
+    //             host: 'mm.bdn.com',
+    //             port: 80,
+    //             authKey: 'key1'
+    //         },
+    //         src: '<%= config.dist %>',
+    //         dest: 'mm.bdn.com/in_memory',
+    //         exclusions: [],
+    //         keep: [],
+    //         // exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', 'dist/tmp'],
+    //         // keep: ['/important/images/at/server/*.jpg'],
+    //         simple: false,
+    //         useList: false
+    //     }
+    // }
 
   });
 
@@ -478,8 +478,8 @@ module.exports = function (grunt) {
     'rev',
     'usemin',
     'htmlmin',
-    'image_resize',
-    'ftpush'
+    'image_resize'
+    //'ftpush'
   ]);
 
   grunt.registerTask('default', [
