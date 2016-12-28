@@ -1,0 +1,45 @@
+{
+  "name": "generator-bdn",
+  "version": "0.5.1",
+  "description": "Scaffold out a front-end web app for a Bangor Daily News project. Includes php importer from Google Docs. Derived from the Yeoman Webapp generator.",
+  "license": "UNLICENSED",
+  "private" : "true",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bangordailynews/BDNapps"
+  },
+  "author": {
+    "name": "Pattie Reaves"
+  },
+  "main": "app/index.js",
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "files": [
+    "app"
+  ],
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "cheerio": "^0.17.0",
+    "yeoman-generator": "^0.17.7",
+    "yosay": "~1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "underscore": "^1.6.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.2.0",
+    "generator-mocha": ">=0.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/bangordailynews/BDNapps/issues"
+  },
+  "maintainers": [
+    {
+      "name": "Pattie Reaves",
+      "email": "preaves@bangordailynews.com"
+    }
+  ]
+}
